@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap');
 
 :root
 {
-	--clr-primary: #184e89;
-	--clr-secondary: #414042;
-	--clr-blue: #30B4EB;
-	--clr-light-gray: #777777;
-	--clr-deactive: #9D9D9D;
+	--clr-primary: #6f05fa;
+	--clr-secondary: #FA6F05;
+	--clr-blue: #2AA0FB;
+	--clr-green: #38FB2A;
+	--clr-red: #FB2A38;
+	--clr-light-gray: #8898aa;
+	--clr-deactive: #f6f9fc;
 	--clr-black: #232A34;
 	--clr-white: #F3F6F7;
-	--clr-alice-blue: #f3fafd;
+	--clr-alice-blue: #535B70;
 
 	--ff: 'Poppins', sans-serif;
 }
@@ -48,6 +50,16 @@ html
 .t-color-blue
 {
 	color: var(--clr-blue) !important;
+}
+
+.t-color-red
+{
+	color: var(--clr-red) !important;
+}
+
+.t-color-green
+{
+	color: var(--clr-green) !important;
 }
 
 .t-color-lightgray
@@ -125,6 +137,16 @@ html
 	background-color: var(--clr-blue) !important;
 }
 
+.bg-color-red
+{
+	background-color: var(--clr-red) !important;
+}
+
+.bg-color-green
+{
+	background-color: var(--clr-green) !important;
+}
+
 .bg-color-lightgray
 {
 	background-color: var(--clr-light-gray) !important;
@@ -168,6 +190,16 @@ html
 .border-color-blue
 {
 	border-color: var(--clr-blue) !important;
+}
+
+.border-color-red
+{
+	border-color: var(--clr-red) !important;
+}
+
+.border-color-green
+{
+	border-color: var(--clr-green) !important;
 }
 
 .border-color-lightgray
@@ -215,6 +247,16 @@ html
 	color: var(--clr-blue) !important;
 }
 
+.hover-text-red:hover
+{
+	color: var(--clr-red) !important;
+}
+
+.hover-text-green:hover
+{
+	color: var(--clr-green) !important;
+}
+
 .hover-text-lightgray:hover
 {
 	color: var(--clr-light-gray) !important;
@@ -255,6 +297,16 @@ html
 	background-color: var(--clr-blue) !important;
 }
 
+.hover-bg-red:hover
+{
+	background-color: var(--clr-red) !important;
+}
+
+.hover-bg-green:hover
+{
+	background-color: var(--clr-green) !important;
+}
+
 .hover-bg-lightgray:hover
 {
 	background-color: var(--clr-light-gray) !important;
@@ -293,6 +345,16 @@ html
 .hover-border-blue:hover
 {
 	border-color: var(--clr-blue) !important;
+}
+
+.hover-border-red:hover
+{
+	border-color: var(--clr-red) !important;
+}
+
+.hover-border-green:hover
+{
+	border-color: var(--clr-green) !important;
 }
 
 .hover-border-lightgray:hover
@@ -477,6 +539,20 @@ html
 	color: var(--clr-blue) !important;
 }
 
+.hover-btn-color-red:hover
+{
+	border-color: var(--clr-red) !important;
+	background: transparent !important;
+	color: var(--clr-red) !important;
+}
+
+.hover-btn-color-green:hover
+{
+	border-color: var(--clr-green) !important;
+	background: transparent !important;
+	color: var(--clr-green) !important;
+}
+
 .hover-btn-color-lightgray:hover
 {
 	border-color: var(--clr-light-gray) !important;
@@ -510,6 +586,36 @@ html
 	border-color: var(--clr-alice-blue) !important;
 	background: transparent !important;
 	color: var(--clr-alice-blue) !important;
+}
+
+.hover-translateY-1px:hover
+{
+	transform: translateY(-1px);
+}
+
+.hover-translateY-2px:hover
+{
+	transform: translateY(-2px);
+}
+
+.hover-translateY-3px:hover
+{
+	transform: translateY(-3px);
+}
+
+.hover-translateY-4px:hover
+{
+	transform: translateY(-4px);
+}
+
+.hover-translateY-5px:hover
+{
+	transform: translateY(-5px);
+}
+
+.btn-icon
+{
+	line-height: 0 !important;
 }
 
 @media (min-width: 768px)
