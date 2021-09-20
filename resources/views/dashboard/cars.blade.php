@@ -5,7 +5,7 @@
 	</x-slot>
 
 	<div class="card p-0 shadow-md border-0">
-		<div class="card-header border-0 bg-transparent p-3 d-flex justify-content-between">
+		<div class="card-header border-0 bg-white p-3 d-flex justify-content-between">
 			<h6 class="t-color-secondary t-semibold m-0">Daftar Mobil</h6>
 			<h6 class="t-color-secondary t-semibold m-0 t-size-sm">25 Entries</h6>
 		</div>
@@ -35,7 +35,7 @@
 							<td class="ps-3 py-4 t-color-aliceblue">3</td>
 							<td class="ps-3 py-4 d-flex">
 								<a href="#" class="btn btn-sm bg-color-green text-white rounded-start rounded-0 hover-shadow hover-translateY-2px transition btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="material-icons text-white">visibility</i></a>
-								<a href="#" class="btn btn-sm bg-color-blue text-white rounded-end rounded-0 hover-shadow hover-translateY-2px transition btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><i class="material-icons text-white">edit</i></a>
+								<a href="/dashboard/cars/update" class="btn btn-sm bg-color-blue text-white rounded-end rounded-0 hover-shadow hover-translateY-2px transition btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><i class="material-icons text-white">edit</i></a>
 							</td>
 						</tr>
 					</tbody>
