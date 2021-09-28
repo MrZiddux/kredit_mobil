@@ -20,6 +20,7 @@ class CreateBeliCashesTable extends Migration
             $table->string('kode_mobil', 20);
             $table->date('cash_tgl');
             $table->float('cash_bayar');
+            $table->timestamps();
             $table->foreign('ktp_pembeli')->references('ktp_pembeli')->on('pembelis');
             $table->foreign('kode_mobil')->references('kode_mobil')->on('mobils');
         });

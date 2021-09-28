@@ -18,26 +18,28 @@
 							<th class="border-0 t-color-lightgray t-size-sm ps-3 t-semibold">Merk</th>
 							<th class="border-0 t-color-lightgray t-size-sm ps-3 t-semibold">Warna</th>
 							<th class="border-0 t-color-lightgray t-size-sm ps-3 t-semibold">Harga</th>
-							<th class="border-0 t-color-lightgray t-size-sm ps-3 t-semibold">Stok</th>
-							<th class="border-0 t-color-lightgray t-size-sm ps-3 t-semibold">Terjual</th>
+							<th class="border-0 t-color-lightgray t-size-sm ps-3 t-semibold">Status</th>
 							<th class="border-0 t-color-lightgray t-size-sm ps-3 t-semibold"></th>
 						</tr>
 					</thead>
 					<tbody>
+						@foreach($data as $item)
 						<tr>
-							<td class="ps-3 py-4 t-color-aliceblue">FER20213</td>
-							<td class="ps-3 py-4 t-color-aliceblue">Ferrari FXX K Evo</td>
+							<td class="ps-3 py-4 t-color-aliceblue">{{ $item->kode_mobil }}</td>
+							<td class="ps-3 py-4 t-color-aliceblue">{{ $item->merk }}</td>
 							<td class="ps-3 py-4 t-color-aliceblue">
-								<input type="color" class="form-control form-control-color" disabled value="#6f05fa">
+								<input type="color" class="form-control form-control-color" disabled value="{{ $item->warna }}">
 							</td>
-							<td class="ps-3 py-4 t-color-aliceblue">Rp. 3.450.000.000</td>
-							<td class="ps-3 py-4 t-color-aliceblue">6</td>
-							<td class="ps-3 py-4 t-color-aliceblue">3</td>
+							<td class="ps-3 py-4 t-color-aliceblue">Rp. {{ number_format($item->harga_mobil, 0, ',', '.') }}</td>
+							<td class="ps-3 py-4 t-color-aliceblue">
+								<span class="badge rounded-pill bg-color-red">Terjual</span>
+							</td>
 							<td class="ps-3 py-4 d-flex">
 								<a href="#" class="btn btn-sm bg-color-green text-white rounded-start rounded-0 hover-shadow hover-translateY-2px transition btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="material-icons text-white">visibility</i></a>
 								<a href="/dashboard/cars/update" class="btn btn-sm bg-color-blue text-white rounded-end rounded-0 hover-shadow hover-translateY-2px transition btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><i class="material-icons text-white">edit</i></a>
 							</td>
 						</tr>
+						@endforeach
 					</tbody>
 				</table>
 			</div>

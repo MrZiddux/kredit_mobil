@@ -21,6 +21,7 @@ class CreatePaketKreditsTable extends Migration
             $table->integer('paket_iml_cicilan');
             $table->float('bunga');
             $table->float('nilai_cicilan');
+            $table->timestamps();
         });
     }
 

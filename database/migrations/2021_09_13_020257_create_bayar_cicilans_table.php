@@ -22,6 +22,7 @@ class CreateBayarCicilansTable extends Migration
             $table->integer('cicilan_ke');
             $table->float('cicilan_sisa_ke');
             $table->float('cicilan_sisa_harga');
+            $table->timestamps();
             $table->foreign('kode_kredit')->references('kode_kredit')->on('kredits');
         });
     }

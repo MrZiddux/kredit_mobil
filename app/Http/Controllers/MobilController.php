@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 
 class MobilController extends Controller
 {
+    public function __construct()
+    {
+        $this->Mobil = new Mobil();
+    }
     /**
      * Display a listing of the resource.
      *
@@ -35,7 +39,8 @@ class MobilController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $this->Mobil->store($request);
+        return redirect('dashboard/cars');
     }
 
     /**
@@ -46,7 +51,8 @@ class MobilController extends Controller
      */
     public function show(Mobil $mobil)
     {
-        //
+        $data = $this->Mobil->showAllData();
+        return view('dashboard/cars', compact('data'));
     }
 
     /**

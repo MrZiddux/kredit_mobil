@@ -3,11 +3,12 @@
 		<h2 class="t-bold t-color-secondary">Tambah Mobil</h2>
 	</x-slot>
 
-	<form action="" method="">
+	<form action="/dashboard/cars/store" method="POST" enctype="multipart/form-data">
+		@csrf
 		<div class="card p-0 shadow-md border-0">
 			<div class="card-header bg-white p-3 sticky-top gap-top z-index-2 clearfix">
 				<h6 class="t-color-secondary t-semibold m-0 float-start">Mobil</h6>
-				<button type="button" class="btn btn-sm bg-color-secondary text-white hover-shadow hover-translateY-1px transition float-end rounded-0 rounded-end">Tambah Mobil</button>
+				<button type="submit" class="btn btn-sm bg-color-secondary text-white hover-shadow hover-translateY-1px transition float-end rounded-0 rounded-end">Tambah Mobil</button>
 				<a href="/dashboard/cars" class="btn btn-sm bg-color-lightgray text-white hover-shadow hover-translateY-1px transition float-end rounded-0 rounded-start">Batal</a>
 			</div>
 			<div class="card-body">

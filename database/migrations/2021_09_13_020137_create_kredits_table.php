@@ -23,6 +23,7 @@ class CreateKreditsTable extends Migration
             $table->string('fotokopi_ktp', 50);
             $table->string('fotokopi_kk', 50);
             $table->string('fotokopi_slip_gaji', 50);
+            $table->timestamps();
             $table->foreign('ktp_pembeli')->references('ktp_pembeli')->on('pembelis');
             $table->foreign('kode_paket')->references('kode_paket')->on('paket_kredits');
             $table->foreign('kode_mobil')->references('kode_mobil')->on('mobils');
