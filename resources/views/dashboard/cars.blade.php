@@ -1,9 +1,10 @@
 <x-app-dashboard>
 	<x-slot name="header">
 		<h2 class="t-bold t-color-secondary">Mobil</h2>
-		<a href="/dashboard/cars/create" class="btn btn-sm shadow-md hover-translateY-2px text-white bg-color-secondary t-semibold t-size-sm transition hover-shadow btn-icon"><i class="material-icons text-white">add_circle</i></a>
+		{{-- <a href="/dashboard/cars/create" class="btn btn-sm shadow-md hover-translateY-2px text-white bg-color-secondary t-semibold t-size-sm transition hover-shadow btn-icon"><i class="material-icons text-white">add_circle</i></a> --}}
+		<button type="button" class="btn btn-sm shadow-md hover-translateY-2px text-white bg-color-secondary t-semibold t-size-sm transition hover-shadow btn-icon" data-bs-toggle="modal" data-bs-target="#modalcreate"><i class="material-icons text-white">add_circle</i></button>
 	</x-slot>
-
+	<x-modal></x-modal>
 	<div class="card p-0 shadow-md border-0">
 		<div class="card-header border-0 bg-white p-3 d-flex justify-content-between">
 			<h6 class="t-color-secondary t-semibold m-0">Daftar Mobil</h6>
