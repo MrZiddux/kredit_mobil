@@ -37,7 +37,7 @@
 							</td>
 							<td class="ps-3 py-4 d-flex">
 								<a href="#" class="btn btn-sm bg-color-green text-white rounded-start rounded-0 hover-shadow hover-translateY-2px transition btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="material-icons text-white">visibility</i></a>
-								<a href="/dashboard/cars/update" class="btn btn-sm bg-color-blue text-white rounded-end rounded-0 hover-shadow hover-translateY-2px transition btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><i class="material-icons text-white">edit</i></a>
+								<a href="/dashboard/cars/{{ $item->kode_mobil }}/edit" class="btn btn-sm bg-color-blue text-white rounded-end rounded-0 hover-shadow hover-translateY-2px transition btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><i class="material-icons text-white">edit</i></a>
 							</td>
 						</tr>
 						@endforeach

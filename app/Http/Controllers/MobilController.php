@@ -61,9 +61,10 @@ class MobilController extends Controller
      * @param  \App\Models\Mobil  $mobil
      * @return \Illuminate\Http\Response
      */
-    public function edit(Mobil $mobil)
+    public function edit(Mobil $mobil, $kode_mobil)
     {
-        //
+        $data = $this->Mobil->showDataId($kode_mobil);
+        return view('dashboard/updatecars', compact('data'));
     }
 
     /**

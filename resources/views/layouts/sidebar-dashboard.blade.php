@@ -20,6 +20,12 @@
         </a>
       </li>
       <li class="nav-item">
+        <a class="nav-link {{ request()->is('dashboard/transaction') ? 't-color-secondary' : ''  }} align-items-center d-flex" aria-current="page" href="/dashboard/transaction">
+          <span class="material-icons-outlined me-2 icon-size {{ request()->is('dashboard/transaction') ? 't-color-secondary' : ''  }}">paid</span>
+          Transaksi
+        </a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link {{ request()->is('dashboard/reports') ? 't-color-secondary' : ''  }} align-items-center d-flex" aria-current="page" href="/dashboard/reports">
           <span class="material-icons-outlined me-2 icon-size {{ request()->is('dashboard/reports') ? 't-color-secondary' : ''  }}">show_chart</span>
           Laporan

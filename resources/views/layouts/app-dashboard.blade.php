@@ -33,5 +33,6 @@
 
 	<script src="/js/bootstrap.bundle.js"></script>
 	<script src="/js/dashboard.js"></script>
+	{{ $script }}
 </body>
 </html>

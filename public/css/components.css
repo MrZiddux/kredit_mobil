@@ -2,8 +2,8 @@
 
 :root
 {
-	--clr-primary: #6f05fa;
-	--clr-secondary: #FA6F05;
+	--clr-primary: #C321DE;
+	--clr-secondary: #3CDE21;
 	--clr-blue: #2AA0FB;
 	--clr-green: #38FB2A;
 	--clr-red: #FB2A38;
@@ -400,6 +400,16 @@ html
 .hover-shadow-lg:hover
 {
 	box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+
+.focus-border-primary:focus
+{
+	border-color: var(--clr-primary) !important;
+}
+
+.focus-border-secondary:focus
+{
+	border-color: var(--clr-secondary) !important;
 }
 
 .shadow-md

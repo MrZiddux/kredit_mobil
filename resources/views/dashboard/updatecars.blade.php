@@ -16,13 +16,13 @@
 						<div class="col-lg-6">
 							<div class="form-group mb-3">
 								<label for="merk" class="form-label">Merk Mobil</label>
-								<input type="text" class="form-control" id="merk" name="merk" placeholder="e.g Tesla">
+								<input type="text" class="form-control" id="merk" name="merk" placeholder="e.g Tesla" value="{{ $data->merk }}">
 							</div>
 						</div>
 						<div class="col-lg-6">
 							<div class="form-group mb-3">
 								<label for="type" class="form-label">Tipe Mobil</label>
-								<input type="text" class="form-control" id="type" name="type" placeholder="e.g Sport">
+								<input type="text" class="form-control" id="type" name="type" placeholder="e.g Sport" value="{{ $data->type }}">
 							</div>
 						</div>
 					</div>
@@ -30,7 +30,7 @@
 						<div class="col-lg-6">
 							<div class="form-group mb-3">
 								<label for="harga_mobil" class="form-label">Harga Mobil</label>
-								<input type="text" class="form-control" id="harga_mobil" name="harga_mobil" placeholder="e.g 2.000.000.000">
+								<input type="text" class="form-control" id="harga_mobil" name="harga_mobil" placeholder="e.g 2.000.000.000" value="{{ $data->harga_mobil }}">
 							</div>
 						</div>
 					</div>
@@ -45,7 +45,7 @@
 						<div class="col-lg-6">
 							<div class="form-group mb-3">
 								<label for="warna" class="form-label">Warna Mobil</label>
-								<input type="color" class="form-control form-control-color" id="warna" name="warna">
+								<input type="color" class="form-control form-control-color" id="warna" name="warna" value="{{ $data->warna }}">
 							</div>
 						</div>
 					</div>

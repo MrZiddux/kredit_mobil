@@ -30,6 +30,12 @@ class Mobil extends Model
         return $data;
     }
 
+    public function showDataId($kode_mobil)
+    {
+        $data = Mobil::findOrFail($kode_mobil);
+        return $data;
+    }
+
     public function store($data)
     {
         $latest = Mobil::select('kode_mobil')->latest()->first();
