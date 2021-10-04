@@ -12,9 +12,11 @@ class AppDashboard extends Component
      * @return void
      */
     public $title;
-    public function __construct($title = null)
+    public $script;
+    public function __construct($title = null, $script = null)
     {
         $this->title = $title ?? "";
+        $this->script = $script ?? "";
     }
 
     /**

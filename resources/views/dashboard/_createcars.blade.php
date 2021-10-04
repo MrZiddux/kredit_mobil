@@ -16,13 +16,19 @@
                      <div class="col-lg-6">
                         <div class="form-group mb-3">
                            <label for="merk" class="form-label">Merk Mobil</label>
-                           <input type="text" class="form-control" id="merk" name="merk" placeholder="e.g Tesla">
+                           <input type="text" class="form-control @error('merk') is-invalid @enderror" id="merk" name="merk" placeholder="e.g Tesla">
+                           @error('merk')
+                              <span class="invalid-feedback">{{ $message }}</span>
+                           @enderror
                         </div>
                      </div>
                      <div class="col-lg-6">
                         <div class="form-group mb-3">
                            <label for="type" class="form-label">Tipe Mobil</label>
-                           <input type="text" class="form-control" id="type" name="type" placeholder="e.g Sport">
+                           <input type="text" class="form-control @error('type') is-invalid @enderror" id="type" name="type" placeholder="e.g Sport">
+                           @error('type')
+                              <span class="invalid-feedback">{{ $message }}</span>
+                           @enderror
                         </div>
                      </div>
                   </div>
@@ -30,7 +36,10 @@
                      <div class="col-lg-6">
                         <div class="form-group mb-3">
                            <label for="harga_mobil" class="form-label">Harga Mobil</label>
-                           <input type="text" class="form-control" id="harga_mobil" name="harga_mobil" placeholder="e.g 2.000.000.000">
+                           <input type="text" class="form-control @error('harga_mobil') is-invalid @enderror" id="harga_mobil" name="harga_mobil" placeholder="e.g 2.000.000.000">
+                           @error('harga_mobil')
+                              <span class="invalid-feedback">{{ $message }}</span>
+                           @enderror
                         </div>
                      </div>
                   </div>
@@ -39,13 +48,19 @@
                      <div class="col-lg-6">
                         <div class="form-group mb-3">
                            <label for="gambar" class="form-label">Gambar Mobil</label>
-                           <input type="file" class="form-control" id="gambar" name="gambar">
+                           <input type="file" class="form-control @error('file') is-invalid @enderror" id="gambar" name="gambar">
+                           @error('gambar')
+                              <span class="invalid-feedback">{{ $message }}</span>
+                           @enderror
                         </div>
                      </div>
                      <div class="col-lg-6">
                         <div class="form-group mb-3">
                            <label for="warna" class="form-label">Warna Mobil</label>
-                           <input type="color" class="form-control form-control-color" id="warna" name="warna">
+                           <input type="color" class="form-control form-control-color @error('warna') is-invalid @enderror" id="warna" name="warna">
+                           @error('warna')
+                              <span class="invalid-feedback">{{ $message }}</span>
+                           @enderror
                         </div>
                      </div>
                   </div>

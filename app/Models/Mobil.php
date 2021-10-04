@@ -14,6 +14,14 @@ class Mobil extends Model
     public $incrementing = false;
     protected $keyType = 'string';
 
+    protected $fillable = [
+        'merk',
+        'type',
+        'harga_mobil',
+        'warna',
+        'gambar',
+    ];
+
     public function kredits()
     {
     	return $this->hasMany(Kredit::class, 'kode_mobil');

@@ -11,6 +11,6 @@ Route::view('dashboard', 'dashboard.index');
 Route::get('dashboard/cars', [MobilController::class, 'show']);
 Route::view('dashboard/cars/create', 'dashboard.createcars');
 Route::post('dashboard/cars/store', [MobilController::class, 'store']);
-Route::get('dashboard/cars/{kode_mobil}/edit', [MobilController::class, 'edit']);
+Route::get('dashboard/cars/{mobil:kode_mobil}/edit', [MobilController::class, 'edit'])->name('mobil.edit');
 
 Route::view('dashboard/transaction', 'transaction.index');

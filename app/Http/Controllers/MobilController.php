@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CarsRequest;
 use App\Models\Mobil;
 use Illuminate\Http\Request;
 
@@ -37,10 +38,10 @@ class MobilController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CarsRequest $request)
     {
         $data = $this->Mobil->store($request);
-        return redirect('dashboard/cars');
+        return redirect('dashboard/cars')->with('success', 'Data telah berhasil di input');
     }
 
     /**
@@ -61,10 +62,9 @@ class MobilController extends Controller
      * @param  \App\Models\Mobil  $mobil
      * @return \Illuminate\Http\Response
      */
-    public function edit(Mobil $mobil, $kode_mobil)
+    public function edit(Mobil $mobil)
     {
-        $data = $this->Mobil->showDataId($kode_mobil);
-        return view('dashboard/updatecars', compact('data'));
+        return view('dashboard/updatecars', compact('mobil'));
     }
 
     /**
@@ -74,7 +74,7 @@ class MobilController extends Controller
      * @param  \App\Models\Mobil  $mobil
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Mobil $mobil)
+    public function update(CarsRequest $request, Mobil $mobil)
     {
         //
     }
