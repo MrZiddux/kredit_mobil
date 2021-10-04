@@ -37,6 +37,11 @@ html
 	box-shadow: none !important;
 }
 
+:checked {
+	background-color: var(--clr-secondary) !important;
+	border-color: var(--clr-secondary) !important;
+}
+
 .t-color-primary
 {
 	color: var(--clr-primary) !important;

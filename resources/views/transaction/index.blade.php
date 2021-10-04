@@ -7,7 +7,22 @@
 			<h6 class="t-color-secondary t-semibold m-0">Pelanggan</h6>
 		</div>
 		<div class="card-body">
-			<form action="" method="POST">
+			<d-flex class="d-flex">
+				<div class="form-check me-2">
+				  <input class="form-check-input" id="pelangganbaru" type="radio" name="flexRadioDefault">
+				  <label class="form-check-label" for="flexRadioDefault1">
+				    Pelanggan Baru
+				  </label>
+				</div>
+				<div class="form-check">
+				  <input class="form-check-input" id="pelangganlama" type="radio" name="flexRadioDefault">
+				  <label class="form-check-label" for="flexRadioDefault2">
+				    Pelanggan Lama
+				  </label>
+				</div>
+			</d-flex>
+			<section id="pelangganwrap"></section>
+			<form action="" method="POST" id="form1" class="d-none">
 				<div class="row row-cols-1 row-cols-md-2">
 					<div class="col">
 						<div class="form-floating mb-3">
@@ -98,7 +113,18 @@
 
 	<x-slot name="script">
 		<script type="text/javascript">
-			
+			$(document).ready(function() {
+				$('#pelangganbaru').on('click', function() {
+					let form1 = document.getElementById("form1");
+				  $("#pelangganwrap").html(form1);
+				  form1.classList.remove("d-none");
+				})
+
+				$('#pelangganlama').on('click', function() {
+					let form1 = document.getElementById("form1");
+				  $("#pelangganwrap").html(form1);
+				})
+			})
 		</script>
 	</x-slot>
 </x-app-dashboard>
