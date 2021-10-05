@@ -18,11 +18,13 @@
             <label class="transition" for="telp_pembeli">Telepon Pembeli</label>
          </div>
       </div>
-      <div class="col">
-         <div class="form-floating mb-3">
-            <textarea class="form-control border-0 border-bottom focus-border-secondary" placeholder="Leave a Address here" id="alamat" name="alamat" rows="3"></textarea>
-            <label for="alamat" class="transition">Alamat Pembeli</label>
-         </div>
-      </div>
+   </div>
+   <div class="form-floating mb-3">
+      <textarea class="form-control border-0 border-bottom focus-border-secondary" placeholder="Leave a Address here" id="alamat" name="alamat" style="height: 7.5rem;"></textarea>
+      <label for="alamat" class="transition">Alamat Pembeli</label>
+   </div>
+   <div class="d-flex justify-content-end">
+      <button type="reset" class="btn text-muted">Reset</button>
+      <button class="btn bg-color-secondary text-white hover-btn-color-secondary transition">Daftarkan</button>
    </div>
 </form>

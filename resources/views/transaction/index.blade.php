@@ -7,19 +7,22 @@
 			<h6 class="t-color-secondary t-semibold m-0">Pelanggan</h6>
 		</div>
 		<div class="card-body">
-			<d-flex class="d-flex mb-3">
-				<div class="form-check me-2  ">
-					<input class="form-check-input" id="pelangganlama" type="radio" name="flexRadioDefault">
-					<label class="form-check-label" for="flexRadioDefault2">
-						Pelanggan Lama
-					</label>
+			<d-flex class="d-flex align-items-center justify-content-between mb-3">
+				<div class="d-flex">
+					<div class="form-check me-2  ">
+						<input class="form-check-input" id="pelangganlama" type="radio" name="flexRadioDefault">
+						<label class="form-check-label" for="flexRadioDefault2">
+							Pelanggan Lama
+						</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" id="pelangganbaru" type="radio" name="flexRadioDefault">
+						<label class="form-check-label" for="flexRadioDefault1">
+							Pelanggan Baru
+						</label>
+					</div>
 				</div>
-				<div class="form-check">
-					<input class="form-check-input" id="pelangganbaru" type="radio" name="flexRadioDefault">
-					<label class="form-check-label" for="flexRadioDefault1">
-						Pelanggan Baru
-					</label>
-				</div>
+			<a href="#" class="btn bg-color-secondary hover-btn-color-secondary text-white transition d-flex align-items-center d-none" id="btnDataPelanggan">Data Pelanggan</a>
 			</d-flex>
 			@include('transaction._formpelangganbaru')
 			@include('transaction._formpelangganlama')
@@ -32,15 +35,19 @@
 				$('#pelangganbaru').on('click', function() {
 					let pelangganBaru = document.getElementById("pelangganBaru");
 					let pelangganLama = document.getElementById("pelangganLama");
+					let btnDataPelanggan = document.getElementById("btnDataPelanggan");
 					pelangganBaru.classList.remove("d-none");
 					pelangganLama.classList.add("d-none");
+					btnDataPelanggan.classList.add("d-none");
 				});
 
 				$('#pelangganlama').on('click', function() {
 					let pelangganBaru = document.getElementById("pelangganBaru");
 					let pelangganLama = document.getElementById("pelangganLama");
+					let btnDataPelanggan = document.getElementById("btnDataPelanggan");
 					pelangganBaru.classList.add("d-none");
 					pelangganLama.classList.remove("d-none");
+					btnDataPelanggan.classList.remove("d-none");
 				});
 			})
 		</script>
