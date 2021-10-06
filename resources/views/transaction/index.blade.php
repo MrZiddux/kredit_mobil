@@ -22,7 +22,8 @@
 						</label>
 					</div>
 				</div>
-			<a href="#" class="btn bg-color-secondary hover-btn-color-secondary text-white transition d-flex align-items-center d-none" id="btnDataPelanggan">Data Pelanggan</a>
+			<button type="button" class="btn bg-color-secondary hover-btn-color-secondary text-white transition d-flex align-items-center d-none" id="btnDataPelanggan" data-bs-toggle="modal" data-bs-target="#modalcreate">Data Pelanggan</button>
+			@include('transaction./_modalpelangganlama')
 			</d-flex>
 			@include('transaction._formpelangganbaru')
 			@include('transaction._formpelangganlama')
@@ -32,6 +33,8 @@
 	<x-slot name="script">
 		<script type="text/javascript">
 			$(document).ready(function() {
+				$('#table_id').DataTable();
+
 				$('#pelangganbaru').on('click', function() {
 					let pelangganBaru = document.getElementById("pelangganBaru");
 					let pelangganLama = document.getElementById("pelangganLama");

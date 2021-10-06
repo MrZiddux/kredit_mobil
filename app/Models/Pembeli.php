@@ -12,14 +12,20 @@ class Pembeli extends Model
     protected $primaryKey = 'ktp_pembeli';
     public $incrementing = false;
     protected $keyType = 'string';
+    protected $fillable = [
+        'ktp_pembeli',
+        'nama_pembeli',
+        'alamat_pembeli',
+        'telp_pembeli',
+    ];
 
     public function kredit()
     {
     	return $this->hasMany(Kredit::class, 'ktp_pembeli');
     }
 
-    public function kredit()
-    {
-    	return $this->hasMany(BeliCash::class, 'ktp_pembeli');
-    }
+    // public function storePelangganBaru($d)
+    // {
+
+    // }
 }

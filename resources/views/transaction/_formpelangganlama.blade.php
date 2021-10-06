@@ -23,7 +23,7 @@
       <textarea class="form-control border-0" placeholder="Leave a Address here" id="alamat" name="alamat" style="height: 7.5rem;" disabled></textarea>
       <label for="alamat" class="transition">Alamat Pembeli</label>
    </div>
-   <div class="accordion accordion-flush mb-3" id="accordionExample">
+   <!-- <div class="accordion accordion-flush mb-3" id="accordionExample">
       <div class="accordion-item">
          <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -74,6 +74,6 @@
             </div>
          </div>
       </div>
-   </div>
+   </div> -->
    <button class="btn bg-color-secondary text-white hover-btn-color-secondary transition d-block ms-auto">Daftarkan</button>
 </form>

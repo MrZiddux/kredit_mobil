@@ -2,11 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Pembeli;
 use Illuminate\Http\Request;
+use App\Models\Pembeli;
+use App\Http\Requests\PembeliLamaRequest;
 
 class PembeliController extends Controller
 {
+    public function __construct()
+    {
+        $this->Pembeli = new Pembeli();
+    }
     /**
      * Display a listing of the resource.
      *
@@ -33,9 +38,10 @@ class PembeliController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(PembeliLamaRequest $r)
     {
-        //
+        $pembeli = Pembeli::create($r->all());
+        return back()->with('success', 'Data Sudah Dibuat!!');
     }
 
     /**

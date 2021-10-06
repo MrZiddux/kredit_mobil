@@ -13,6 +13,7 @@
 	@endif
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/css/components.css">
+	<link rel="stylesheet" href="/css/datatables.css">
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="/css/dashboard.css">
 </head>
@@ -33,6 +34,7 @@
 
 	<script src="/js/jquery-3.5.1.min.js"></script>
 	<script src="/js/bootstrap.bundle.js"></script>
+	<script src="/js/datatables.js"></script>
 	<script src="/js/dashboard.js"></script>
 	{{ $script }}
 </body>
