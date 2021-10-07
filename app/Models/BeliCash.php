@@ -20,6 +20,6 @@ class BeliCash extends Model
 
     public function mobil()
     {
-    	return $this->belongsTo(mobil::class, 'kode_mobil');
+    	return $this->belongsTo(Mobil::class, 'kode_mobil');
     }
 }
