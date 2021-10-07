@@ -19,7 +19,7 @@ class PembeliController extends Controller
      */
     public function index()
     {
-        //
+        
     }
 
     /**

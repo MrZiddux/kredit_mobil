@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CashController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MobilController;
 use App\Http\Controllers\PembeliController;
@@ -14,6 +15,6 @@ Route::view('dashboard/cars/create', 'dashboard.createcars');
 Route::post('dashboard/cars/store', [MobilController::class, 'store']);
 Route::get('dashboard/cars/{mobil:kode_mobil}/edit', [MobilController::class, 'edit'])->name('mobil.edit');
 
-Route::post('dashboard/transaction/pelangganbaru', [PembeliController::class, 'store'])->name('pelangganbaru');
+Route::post('dashboard/transaction/pelangganbaru', [PembeliController::class, 'store'])->name('createpelanggan');
 
-Route::view('dashboard/transaction', 'transaction.index');
+Route::get('dashboard/transaction', [CashController::class, 'index']);
