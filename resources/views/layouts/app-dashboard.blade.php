@@ -32,7 +32,7 @@
 	</div>	
 	<x-footer-dashboard></x-footer-dashboard>
 
-	<script src="/js/jquery-3.5.1.min.js"></script>
+	<script src="/js/jquery.min.js"></script>
 	<script src="/js/bootstrap.bundle.js"></script>
 	<script src="/js/datatables.js"></script>
 	<script src="/js/dashboard.js"></script>

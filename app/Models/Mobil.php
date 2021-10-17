@@ -24,12 +24,12 @@ class Mobil extends Model
 
     public function kredits()
     {
-    	return $this->hasMany(Kredit::class, 'kode_mobil', 'kode_mobil');
+        return $this->hasMany(Kredit::class, 'kode_mobil', 'kode_mobil');
     }
 
     public function beli_cashes()
     {
-    	return $this->hasMany(BeliCash::class, 'kode_mobil', 'kode_mobil');
+        return $this->hasMany(BeliCash::class, 'kode_mobil', 'kode_mobil');
     }
 
     public function showAllData()
@@ -64,6 +64,5 @@ class Mobil extends Model
         $mobil->warna = $data->warna;
         $mobil->gambar = $filename;
         $mobil->save();
-
     }
 }
